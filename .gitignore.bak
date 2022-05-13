@@ -5,3 +5,5 @@
 /bin/
 /obj/
 !apikey.txt
+!/Files
+!/Reports
