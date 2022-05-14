@@ -20,7 +20,7 @@ namespace InfoSecReports.Models
         [Required]
         public DateTime DateOfEnd { get; set; }
         public string Notes { get; set; }
-        public string Owner { get; set; }
+        //public string Owner { get; set; }
         public ICollection<Achievement> Achievement { get; set; }
         public ICollection<WorkingGroup> WorkingGroup { get; set; }
         public ICollection<ScriptOfObject> ScriptOfObject { get; set; }

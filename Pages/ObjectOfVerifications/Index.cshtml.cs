@@ -23,7 +23,8 @@ namespace InfoSecReports.Pages.ObjectOfVerifications
 
         public async Task OnGetAsync()
         {
-            ObjectOfVerification = await _context.ObjectOfVerification.Where(m => m.Owner == User.Identity.Name).ToListAsync();
+            ObjectOfVerification = await _context.ObjectOfVerification.ToListAsync();
+            //ObjectOfVerification = await _context.ObjectOfVerification.Where(m => m.Owner == User.Identity.Name).ToListAsync();
         }
     }
 }

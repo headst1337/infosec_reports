@@ -33,8 +33,8 @@ namespace InfoSecReports.Pages.ObjectOfVerifications
             {
                 return Page();
             }
-            string Owner = User.Identity.Name;
-            ObjectOfVerification.Owner = Owner;
+            //string Owner = User.Identity.Name;
+            //ObjectOfVerification.Owner = Owner;
             _context.ObjectOfVerification.Add(ObjectOfVerification);
             await _context.SaveChangesAsync();
 

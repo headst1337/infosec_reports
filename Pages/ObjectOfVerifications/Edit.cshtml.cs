@@ -47,8 +47,8 @@ namespace InfoSecReports.Pages.ObjectOfVerifications
                 return Page();
             }
 
-            string Owner = User.Identity.Name;
-            ObjectOfVerification.Owner = Owner;
+            //string Owner = User.Identity.Name;
+            //ObjectOfVerification.Owner = Owner;
             _context.Attach(ObjectOfVerification).State = EntityState.Modified;
 
             try
